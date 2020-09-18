@@ -4,7 +4,7 @@ import random
 import re
 
 
-TOKEN = "NjQ4OTAzNjc4NzQ0MzMwMjUy.XeKqhQ.RvxVBGN5evZ27eGswFzwiONIp-A"  # unique key of discord bot
+TOKEN = "NjQ4OTAzNjc4NzQ0MzMwMjUy.Xd1ApQ.FobK8XxpCLm20Yb_iHolze0mtoA"  # unique key of discord bot
 
 
 bot = commands.Bot(command_prefix="diss")
@@ -26,6 +26,7 @@ with open("diss_list.txt", "r") as fd:
 def from_list_of_dissk(x):
     y = temp_list1[x]
     return y
+    
 
 
 # to match with predefined list of inputs
@@ -37,7 +38,7 @@ with open("input_list.txt", "r") as fi:
 
 
 # to match with predefined list of regular outputs
-with open("output_list.txt", "r") as fo:
+with open("input_list.txt", "r") as fo:
     temp_list2 = list(fo.readlines())
     for line in temp_list2:
         line = line.replace("\r", "").replace("\n", "")
