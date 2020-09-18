@@ -4,7 +4,7 @@ import random
 import re
 
 
-TOKEN = "NjQ4OTAzNjc4NzQ0MzMwMjUy.Xd1ApQ.FobK8XxpCLm20Yb_iHolze0mtoA"  # unique key of discord bot
+TOKEN = "NjQ4OTAzNjc4NzQ0MzMwMjUy.Xd1ApQ.4vDLFjE7gNGW_Mv7T2Uglhb0Vp4"  # unique key of discord bot
 
 
 bot = commands.Bot(command_prefix="diss")
