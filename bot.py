@@ -4,23 +4,17 @@ import random
 import re
 
 
-TOKEN = "NjQ4OTAzNjc4NzQ0MzMwMjUy.Xd1ApQ.4vDLFjE7gNGW_Mv7T2Uglhb0Vp4"  # unique key of discord bot
+TOKEN = input("Enter Your Token: ")
 
 
 bot = commands.Bot(command_prefix="diss")
 
 
-# to match with predefined list of diss
-"""with open("diss_list.txt", "r") as fd:
-    temp_diss_listk = list(fd.readlines())
-    from_list_of_dissk =[]
-    for i in temp_diss_listk:
-        from_list_of_dissk.append(i.strip())
-"""
-with open("diss_list.txt", "r") as fd:
-    temp_list1 = list(fd.readlines())
-    for line in temp_list1:
-        line = line.replace("\r", "").replace("\n", "")
+
+fd = open("diss_list.txt","r") 
+temp_list1 = list(fd.readlines())
+for line in temp_list1:
+    line = line.replace("\r", "").replace("\n", "")
 
 
 def from_list_of_dissk(x):
@@ -30,18 +24,18 @@ def from_list_of_dissk(x):
 
 
 # to match with predefined list of inputs
-with open("input_list.txt", "r") as fi:
-    temp_input_listk = list(fi.readlines())
-    from_list_of_inputsk = []
-    for i in temp_input_listk:
-        from_list_of_inputsk.append(i.strip())
+fi = open("input_list.txt","r")
+temp_input_listk = list(fi.readlines())
+from_list_of_inputsk = []
+for i in temp_input_listk:
+    from_list_of_inputsk.append(i.strip())
 
 
 # to match with predefined list of regular outputs
-with open("input_list.txt", "r") as fo:
-    temp_list2 = list(fo.readlines())
-    for line in temp_list2:
-        line = line.replace("\r", "").replace("\n", "")
+fo = open("diss_list.txt","r")
+temp_list2 = list(fo.readlines())
+for line in temp_list2:
+    line = line.replace("\r", "").replace("\n", "")
 
 
 def from_list_of_outputsk(x):
